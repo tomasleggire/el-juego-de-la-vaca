@@ -1,5 +1,71 @@
 .App {
-  background-color: rgb(203, 115, 206);
+  /* background-color: rgb(203, 115, 206); */
   width: 100%;
   height: 100vh;
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(329deg, rgba(0,0,0,1) 63%, rgba(232,53,197,1) 100%);
+background: -webkit-linear-gradient(329deg, rgba(0,0,0,1) 63%, rgba(232,53,197,1) 100%);
+background: linear-gradient(329deg, rgba(0,0,0,1) 63%, rgba(232,53,197,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e835c5",GradientType=1);
+}
+/*
+ h1 {
+  text-align: center;
+  font-size: 52px;
+  padding-top: 92px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(201, 201, 201);
+  
+}
+*/
+@keyframes pulse {
+  0% {
+    text-shadow: rgb(218, 215, 208) 1px 0 10px;
+  }
+  100% {
+    text-shadow: none;
+  }
+} 
+
+h1 {
+  font-size: 50px!important;
+  font-weight: bold!important;
+  font-family: monospace;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  padding: 64px;
+  background: linear-gradient(hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%, hsl(0, 0%, 100%) 10% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 800px;
+  }
+}
+
+h4 {
+  text-align: center;
+  color: rgb(201, 201, 201);
+  font-family: monospace;
+  font-size: 42px;
+  padding-top: 90px;
+  text-decoration: underline;
+  text-shadow: rgb(218, 215, 208) 1px 0 10px;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
 }
